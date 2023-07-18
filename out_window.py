@@ -40,9 +40,9 @@ class Ui_OutputDialog(QDialog):
 
     def initialize_firebase(self):
         # Initialize Firebase
-        cred = credentials.Certificate('ventura-5d1fe-firebase-adminsdk-q6x4i-2a488de72f.json')
+        cred = credentials.Certificate('YOUR JSON FILE')
         firebase_admin.initialize_app(cred, {
-            'databaseURL': 'https://ventura-5d1fe-default-rtdb.asia-southeast1.firebasedatabase.app/'
+            'databaseURL': '<YOUR DATABASE URL>'
         })
 
     @pyqtSlot()

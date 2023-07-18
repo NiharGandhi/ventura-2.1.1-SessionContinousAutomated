@@ -9,9 +9,9 @@ import base64
 # Check if the Firebase app is already initialized
 if not firebase_admin._apps:
     # Initialize Firebase app
-    cred = credentials.Certificate('ventura-5d1fe-firebase-adminsdk-q6x4i-2a488de72f.json')  # Replace with your service account key file
+    cred = credentials.Certificate('<Replace with your service account key file>')  
     firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://ventura-5d1fe-default-rtdb.asia-southeast1.firebasedatabase.app/'  # Replace with your Firebase project's URL
+        'databaseURL': '<Replace with your Firebase project's URL>'
     })
 
 # Rest of the code for Streamlit web app
